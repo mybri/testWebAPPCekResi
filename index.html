@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+
+    <title>Cek Resi</title>
+</head>
+<body>
+    <body class="background-color: #f0f0f0;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd20a">
+        <div class="cointainer-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.png" alt="" srcset="">
+            </a>
+            <button class="navbar-toogler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="" class="nav-link active" aria-current="page" href="#"><h2>Cek Resi</h2></a>
+                </div>
+            </div>
+        </div>
+        </nav>
+
+        <div class="container">
+            <div class="row mt-2 justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="text-center">Cek Resi</h1>
+                    <p class="text-center">Silahkan Anda Bisa Mengecek Resi Anda Disini :</p>
+
+                    <form action="">
+                        <div class="form-group">
+                            <!--Label Untuk input Nomor Resi-->
+                            <input type="text" class="form-control" placeholder="Masukkan No Resi" id="awb_input">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <select name="input courier" id="courier_input" class="form-select">
+                                <option value="">Pilih Kurir</option>
+                                <option value="jnt">J&T</option>
+                                <option value="jne">JNE</option>
+                                <option value="pos">POS INDONESIA</option>
+                                <option value="sicepat">siCepat Express</option>
+                                <option value="tiki">Tiki</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button class="btn btn-dark" type="button" id="search-button">Cek</button>
+                        <button class="btn btn-dark" onclick="document.getElementById('awb_input,courier_input').value = ''">Reset</button>
+                    </form>
+
+                    <hr/>
+                    <div class="row" id="resi-status">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Memanggil Javascript-->
+    <!-- <script src="script.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/cjs/popper.js" integrity="sha256-HfjwSotsacXyqOecTZserpsSPXqUB+OWuWmUQCDNqq0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js" integrity="sha512-5XqP0s8v5OPHtwBcKQ8stZ3CSALCT+EWcF1mw6Sin1pAg9Xcnuxj9Jx6YY6JgHQ5UxxT6ewAoRJDl0Q4xIpTcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js" integrity="sha512-8jWhd7A6R6UlCKg6oa5Pk3Efvk5PQFgKJTNK+4PYihIL8sGcPsolaHShuNWEnG9So1uKa7+EAA0dvY/g2n6OrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</body>
+</html>
